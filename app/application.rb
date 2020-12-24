@@ -8,6 +8,7 @@ class Application
       resp.write "#{num_1}\n"
       resp.write "#{num_2}\n"
       
+    case
     when num_1
       resp.write "Good Morning!"
     when num_2
