@@ -2,16 +2,13 @@ class Application
   
   def call(env)
     resp = Rack::Response.new
-    num_1 = Kernel.rand (1,12)
-    num_2 = Kernel.rand (13..24)
+    num_1 = 1, 11
+    num_2 = 13, 24
     
-      resp.write "#{num_1}\n"
-      resp.write "#{num_2}\n"
-      
-    case 
-    when num_1
+       
+    if num_1
       resp.write "Good Morning!"
-    when num_2
+    if num_2
       resp.write "Good Afternoon!"
     end
     resp.finish
