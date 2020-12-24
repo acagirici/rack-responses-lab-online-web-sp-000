@@ -8,9 +8,9 @@ class Application
       resp.write "#{num_1}\n"
       resp.write "#{num_2}\n"
       
-    case num_1
+    when num_1
       resp.write "Good Morning!"
-    case num_2
+    when num_2
       resp.write "Good Afternoon!"
     end
     resp.finish
