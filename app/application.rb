@@ -6,3 +6,13 @@ class Application
     num_2 = Kernel.rand (13..24)
     
       resp.write "#{num_1}\n"
+      resp.write "#{num_2}\n"
+      
+    if num_1
+      resp.write "Good Morning!"
+    else
+      resp.write "Good Afternoon!"
+    end
+    resp.finish
+  end
+end
