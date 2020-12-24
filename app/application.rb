@@ -6,10 +6,10 @@ class Application
     num_2 = 13, 24
     
        
-    if num_1
+    if Time.now.hour.between?(0, 11)
       resp.write "Good Morning!"
-    elsif num_2
-      resp.write "Good Afternoon!"
+    elsif Time.now.hour.between?(12, 17)
+      resp.write "Good Afternoon."
     else
       resp.write "Good Evening!"
     end
