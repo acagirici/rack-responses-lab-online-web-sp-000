@@ -10,7 +10,7 @@ class Application
       
     if num_1
       resp.write "Good Morning!"
-    else
+    elsif num_2
       resp.write "Good Afternoon!"
     end
     resp.finish
